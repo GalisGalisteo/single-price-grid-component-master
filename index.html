@@ -20,7 +20,8 @@
             primaryLighter: "hsl(179, 62%, 43%, 0.8)",
             secondary: "hsl(71, 73%, 54%)",
             lightGray: "hsl(204, 43%, 93%)",
-            grayishBlue: "hsl(218, 22%, 67%)"
+            grayishBlue: "hsl(218, 22%, 67%)",
+            whiteSemiTransparent: "hsl(0, 0%, 100%, 0.7)"
           }
         },
       }
@@ -36,26 +37,35 @@
 
 </head>
 
-<body>
-  <main class="md:flex">
+<body class="bg-lightGray">
+  <main class="md:flex bg-white m-8">
     <section class="p-5 space-y-4">
-      <h1 class="text-xl text-primary">Join our community</h1>
-      <h2 class="text-secondary">30-day, hassle-free money back guarantee</h2>
+      <h1 class="text-xl text-primary font-bold">Join our community</h1>
+      <h2 class="text-lg text-secondary font-bold	">30-day, hassle-free money back guarantee</h2>
       <p class="text-grayishBlue">
         Gain access to our full library of tutorials along with expert code reviews.
         Perfect for any developers who are serious about honing their skills.
       </p>
     </section>
     <div>
-      <section class="bg-primary p-5">
-        <h2>Monthly Subscription</h2>
-        <p class="ms-[0rem]">&dollar;29 per month</p>
-        <p>Full access for less than &dollar;1 a day</p>
-        <a href="#">Sign Up</a>
+      <section class="bg-primary text-white p-5 space-y-4">
+        <h2 class="text-lg">Monthly Subscription</h2>
+        <div>
+          <p>
+            <span class="text-3xl font-bold">
+              &dollar;29 </span>
+            <span class="text-whiteSemiTransparent">
+              per month</span>
+          </p>
+          <p class="pt-2">Full access for less than &dollar;1 a day</p>
+        </div>
+        <div class="bg-secondary py-3 text-center rounded">
+          <a href="#">Sign Up</a>
+        </div>
       </section>
       <section class="bg-primaryLighter p-5">
-        <h2>Why Us</h2>
-        <div class="text-lightGray">
+        <h2 class="text-white">Why Us</h2>
+        <div class="text-whiteSemiTransparent">
           <div>Tutorials by industry experts</div>
           <div>Peer &amp; expert code review</div>
           <div>Coding exercises</div>
