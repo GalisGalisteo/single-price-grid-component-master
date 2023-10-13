@@ -17,6 +17,10 @@
           },
           colors: {
             primary: "hsl(179, 62%, 43%)",
+            primaryLighter: "hsl(179, 62%, 43%, 0.8)",
+            secondary: "hsl(71, 73%, 54%)",
+            lightGray: "hsl(204, 43%, 93%)",
+            grayishBlue: "hsl(218, 22%, 67%)"
           }
         },
       }
@@ -34,32 +38,34 @@
 
 <body>
   <main class="md:flex">
-    <section class="space-y-4">
+    <section class="p-5 space-y-4">
       <h1 class="text-xl text-primary">Join our community</h1>
-      <h2>30-day, hassle-free money back guarantee</h2>
-      <p>
+      <h2 class="text-secondary">30-day, hassle-free money back guarantee</h2>
+      <p class="text-grayishBlue">
         Gain access to our full library of tutorials along with expert code reviews.
         Perfect for any developers who are serious about honing their skills.
       </p>
     </section>
-    <section class="bg-primary p-5">
-      <h2>Monthly Subscription</h2>
-      <p class="ms-[0rem]">&dollar;29 per month</p>
-      <p>Full access for less than &dollar;1 a day</p>
-      <a href="#">Sign Up</a>
-    </section>
-    <section>
-      <h2>Why Us</h2>
-      <div>
-Tutorials by industry experts
-Peer &amp; expert code review
-Coding exercises
-Access to our GitHub repos
-Community forum
-Flashcard decks
-New videos every week
-      </div>
-    </section>
+    <div>
+      <section class="bg-primary p-5">
+        <h2>Monthly Subscription</h2>
+        <p class="ms-[0rem]">&dollar;29 per month</p>
+        <p>Full access for less than &dollar;1 a day</p>
+        <a href="#">Sign Up</a>
+      </section>
+      <section class="bg-primaryLighter p-5">
+        <h2>Why Us</h2>
+        <div class="text-lightGray">
+          <div>Tutorials by industry experts</div>
+          <div>Peer &amp; expert code review</div>
+          <div>Coding exercises</div>
+          <div>Access to our GitHub repos</div>
+          <div>Community forum</div>
+          <div>Flashcard decks</div>
+          <div>New videos every week</div>
+        </div>
+      </section>
+    </div>
   </main>
 
 </body>
